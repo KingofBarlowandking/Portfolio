@@ -8,9 +8,80 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="styles.css">
+  		<script defer src="script.js"></script>
 		<title>Astro</title>
 	</head>
 	<body>
 		<h1>My Astro Site</h1>
+		<header>
+			<nav>
+			  <ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			  </ul>
+			</nav>
+		  </header>
+		
+		  <section id="hero">
+			<div class="hero-content">
+			  <h1>Hello, I'm [Your Name]</h1>
+			  <p>Full-Stack Developer | Metaverse Enthusiast</p>
+			  <button><a href="#projects">View My Work</a></button>
+			</div>
+		  </section>
+		
+		  <section id="about">
+			<h2>About Me</h2>
+			<p>I'm a developer with a passion for creating immersive experiences in the metaverse. My goal is to bring the digital world closer to reality with cutting-edge apps and technologies.</p>
+		  </section>
+		
+		  <section id="projects">
+			<h2>Projects</h2>
+			<div class="project-list">
+			  <div class="project-card">
+				<h3>Project 1</h3>
+				<p>Description of your first project.</p>
+			  </div>
+			  <div class="project-card">
+				<h3>Project 2</h3>
+				<p>Description of your second project.</p>
+			  </div>
+			  <div class="project-card">
+				<h3>Project 3</h3>
+				<p>Description of your third project.</p>
+			  </div>
+			</div>
+		  </section>
+		
+		  <section id="skills">
+			<h2>Skills</h2>
+			<ul>
+			  <li>HTML/CSS/JavaScript</li>
+			  <li>React/Vue.js</li>
+			  <li>Node.js/Express</li>
+			  <li>Web3/Blockchain Development</li>
+			  <li>AR/VR Development</li>
+			</ul>
+		  </section>
+		
+		  <section id="contact">
+			<h2>Contact Me</h2>
+			<form id="contact-form">
+			  <input type="text" placeholder="Your Name" required>
+			  <input type="email" placeholder="Your Email" required>
+			  <textarea placeholder="Your Message" required></textarea>
+			  <button type="submit">Send Message</button>
+			</form>
+		  </section>
+		
+		  <footer>
+			<p>© 2024 [Your Name] | All Rights Reserved</p>
+		  </footer>
+		
+		</body>
+		</html>
 	</body>
 </html>
