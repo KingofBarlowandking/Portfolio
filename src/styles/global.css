@@ -5,9 +5,16 @@
   box-sizing: border-box;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+html, body {
   font-family: Arial, sans-serif;
-  display: flex;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
+  height: 100%; /* Ensures the body takes the full height */
 }
 
 /* Sidebar Styles */
@@ -23,6 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: right 0.3s;
+  z-index: 100; /* Ensures it stays above main content */
 }
 
 #sidebar ul {
@@ -46,12 +54,18 @@ body {
   width: 100%;
 }
 
-/* Main Sections */
-.section {
-  width: 100%;
-  padding: 100px;
-  min-height: 100vh;
-  transition: background 0.5s;
+/* Main Content Sections */
+section {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  scroll-snap-align: start;
+  padding: 0 2rem;
+  transition: background-color 0.5s ease;
 }
 
 #hero { background-color: #f0f8ff; }

@@ -39,3 +39,51 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
+
+
+// Helper function for easing effect
+function easeInOutQuad(t) {
+  return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+}
+
+// Smooth scroll to a target element with easing effect
+function smoothScrollTo(target) {
+  const start = window.scrollY;
+  const end = target.offsetTop;
+  const distance = end - start;
+  const duration = 2000; // Duration in milliseconds
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (!startTime) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const progress = Math.min(timeElapsed / duration, 1);
+    const easing = easeInOutQuad(progress);
+    window.scrollTo(0, start + distance * easing);
+
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
+    }
+  }
+
+  requestAnimationFrame(animation);
+}
+
+// Scroll event listener to snap to sections
+document.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll(".section");
+  const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    // Check if we're within the section range
+    if (
+      scrollPosition >= sectionTop &&
+      scrollPosition < sectionTop + sectionHeight
+    ) {
+      smoothScrollTo(section);
+    }
+  });
+});

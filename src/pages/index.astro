@@ -1,54 +1,36 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import Section from '../components/Section.jsx';
 ---
+
 <html lang="en">
-	<head>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <title>Interactive Portfolio</title>
-	</head>
-	<body>
-	
-	  <!-- Sidebar Navigation -->
-	  <nav id="sidebar">
-		<ul>
-		  <li data-section="hero"><span>Home</span></li>
-		  <li data-section="about"><span>About</span></li>
-		  <li data-section="projects"><span>Projects</span></li>
-		  <li data-section="skills"><span>Skills</span></li>
-		  <li data-section="contact"><span>Contact</span></li>
-		</ul>
-	  </nav>
-	
-	  <!-- Main Content Sections -->
-	  <section id="hero" class="section">
-		<h1>Welcome to My Portfolio</h1>
-	  </section>
-	
-	  <section id="about" class="section">
-		<h2>About Me</h2>
-		<p>Details about your background, skills, and experience.</p>
-	  </section>
-	
-	  <section id="projects" class="section">
-		<h2>Projects</h2>
-		<p>A showcase of your projects.</p>
-	  </section>
-	
-	  <section id="skills" class="section">
-		<h2>Skills</h2>
-		<p>A list of your skills and expertise.</p>
-	  </section>
-	
-	  <section id="contact" class="section">
-		<h2>Contact Me</h2>
-		<p>Contact form or details.</p>
-	  </section>
-	
-	  <script src="../scripts/script.js"></script>
-	</body>
-	</html>
-	
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Portfolio</title>
+  </head>
+  <body>
+  
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+      <ul>
+        <li data-section="hero"><span>Home</span></li>
+        <li data-section="about"><span>About</span></li>
+        <li data-section="projects"><span>Projects</span></li>
+        <li data-section="skills"><span>Skills</span></li>
+        <li data-section="contact"><span>Contact</span></li>
+      </ul>
+    </nav>
+  
+    <!-- Main Content Sections (Using React Components) -->
+    <main>
+      <Section name="Welcome to My Portfolio" index={0} />
+      <Section name="About Me" index={1} />
+      <Section name="Projects" index={2} />
+      <Section name="Skills" index={3} />
+      <Section name="Contact Me" index={4} />
+    </main>
+  
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
