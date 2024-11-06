@@ -6,71 +6,49 @@ import Header from '../components/Header.astro';
 ---
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-  		<script defer src="src/scripts/scripts.js"></script>
-		<title>Alex King</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Interactive Portfolio</title>
 	</head>
 	<body>
-		<h1>My Portfolio</h1>
-		<Header />
-		  <section id="hero">
-			<div class="hero-content">
-			  <h1>Hello, I'm Alex King</h1>
-			  <p>UI/UX | Design Enthusiast</p>
-			  <button><a href="#projects">View My Work</a></button>
-			</div>
-		  </section>
-		
-		  <section id="about">
-			<h2>About Me</h2>
-			<p>I'm a developer with a passion for creating immersive experiences in the metaverse. My goal is to bring the digital world closer to reality with cutting-edge apps and technologies.</p>
-		  </section>
-		
-		  <section id="projects">
-			<h2>Projects</h2>
-			<div class="project-list">
-			  <div class="project-card">
-				<h3>Project 1</h3>
-				<p>Description of your first project.</p>
-			  </div>
-			  <div class="project-card">
-				<h3>Project 2</h3>
-				<p>Description of your second project.</p>
-			  </div>
-			  <div class="project-card">
-				<h3>Project 3</h3>
-				<p>Description of your third project.</p>
-			  </div>
-			</div>
-		  </section>
-		
-		  <section id="skills">
-			<h2>Skills</h2>
-			<ul>
-			  <li>HTML/CSS/JavaScript</li>
-			  <li>React/Vue.js</li>
-			  <li>Node.js/Express</li>
-			  <li>Web3/Blockchain Development</li>
-			  <li>AR/VR Development</li>
-			</ul>
-		  </section>
-		
-		  <section id="contact">
-			<h2>Contact Me</h2>
-			<form id="contact-form">
-			  <input type="text" placeholder="Your Name" required>
-			  <input type="email" placeholder="Your Email" required>
-			  <textarea placeholder="Your Message" required></textarea>
-			  <button type="submit">Send Message</button>
-			</form>
-		  </section>
-		
-		  <Footer />
-		
-		</body>
-		</html>
+	
+	  <!-- Sidebar Navigation -->
+	  <nav id="sidebar">
+		<ul>
+		  <li data-section="hero"><span>Home</span></li>
+		  <li data-section="about"><span>About</span></li>
+		  <li data-section="projects"><span>Projects</span></li>
+		  <li data-section="skills"><span>Skills</span></li>
+		  <li data-section="contact"><span>Contact</span></li>
+		</ul>
+	  </nav>
+	
+	  <!-- Main Content Sections -->
+	  <section id="hero" class="section">
+		<h1>Welcome to My Portfolio</h1>
+	  </section>
+	
+	  <section id="about" class="section">
+		<h2>About Me</h2>
+		<p>Details about your background, skills, and experience.</p>
+	  </section>
+	
+	  <section id="projects" class="section">
+		<h2>Projects</h2>
+		<p>A showcase of your projects.</p>
+	  </section>
+	
+	  <section id="skills" class="section">
+		<h2>Skills</h2>
+		<p>A list of your skills and expertise.</p>
+	  </section>
+	
+	  <section id="contact" class="section">
+		<h2>Contact Me</h2>
+		<p>Contact form or details.</p>
+	  </section>
+	
+	  <script src="../scripts/script.js"></script>
 	</body>
-</html>
+	</html>
+	
