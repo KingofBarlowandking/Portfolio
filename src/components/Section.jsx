@@ -1,56 +1,43 @@
 import React, { useEffect, useRef } from 'react';
 
-// Helper function for easing effect
-const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
-
-const Section = ({ name, index }) => {
+const Section = ({ name, index, id }) => {
   const sectionRef = useRef(null);
 
-  const smoothScrollTo = (target) => {
-    const start = window.scrollY;
-    const end = target.offsetTop;
-    const distance = end - start;
-    const duration = 800;
-    let startTime = null;
+  // Update the active section based on scroll position
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add active class to the sidebar navigation
+            document
+              .querySelector(`[data-section="${id}"]`)
+              .classList.add('active');
+          } else {
+            document
+              .querySelector(`[data-section="${id}"]`)
+              .classList.remove('active');
+          }
+        });
+      },
+      { threshold: 0.6 } // Trigger when 60% of the section is visible
+    );
 
-    const animation = (currentTime) => {
-      if (!startTime) startTime = currentTime;
-      const timeElapsed = currentTime - startTime;
-      const progress = Math.min(timeElapsed / duration, 1);
-      const easing = easeInOutQuad(progress);
-      window.scrollTo(0, start + distance * easing);
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
 
-      if (timeElapsed < duration) {
-        requestAnimationFrame(animation);
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
       }
     };
-
-    requestAnimationFrame(animation);
-  };
-
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
-    if (sectionRef.current) {
-      const sectionTop = sectionRef.current.offsetTop;
-      const sectionHeight = sectionRef.current.offsetHeight;
-
-      if (
-        scrollPosition >= sectionTop &&
-        scrollPosition < sectionTop + sectionHeight
-      ) {
-        smoothScrollTo(sectionRef.current);
-      }
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [id]);
 
   return (
     <section
       ref={sectionRef}
+      id={id}
       style={{
         height: '150vh',
         display: 'flex',

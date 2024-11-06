@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Section from '../components/Section.jsx';
+import Sidebar from '../components/Sidebar.jsx';
 ---
 
 <html lang="en">
@@ -10,27 +11,16 @@ import Section from '../components/Section.jsx';
     <title>Interactive Portfolio</title>
   </head>
   <body>
-  
-    <!-- Sidebar Navigation -->
-    <nav id="sidebar">
-      <ul>
-        <li data-section="hero"><span>Home</span></li>
-        <li data-section="about"><span>About</span></li>
-        <li data-section="projects"><span>Projects</span></li>
-        <li data-section="skills"><span>Skills</span></li>
-        <li data-section="contact"><span>Contact</span></li>
-      </ul>
-    </nav>
-  
-    <!-- Main Content Sections (Using React Components) -->
+    <!-- Render Sidebar Component -->
+    <Sidebar />
+
+    <!-- Main Content Sections (React Components) -->
     <main>
-      <Section name="Welcome to My Portfolio" index={0} />
-      <Section name="About Me" index={1} />
-      <Section name="Projects" index={2} />
-      <Section name="Skills" index={3} />
-      <Section name="Contact Me" index={4} />
+      <Section id="hero" name="Welcome to My Portfolio" index={0} />
+      <Section id="about" name="About Me" index={1} />
+      <Section id="projects" name="Projects" index={2} />
+      <Section id="skills" name="Skills" index={3} />
+      <Section id="contact" name="Contact Me" index={4} />
     </main>
-  
-    <script src="../scripts/script.js"></script>
   </body>
 </html>
