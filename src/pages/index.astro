@@ -11,12 +11,10 @@ import Sidebar from '../components/Sidebar.jsx';
     <title>Interactive Portfolio</title>
   </head>
   <body>
-    <!-- Render Sidebar Component -->
-    <Sidebar />
-
+    <Sidebar client:load />
     <!-- Main Content Sections (React Components) -->
     <main>
-      <Section id="hero" name="Welcome to My Portfolio" index={0} />
+      <Section id="hero" name="hero" index={0} />
       <Section id="about" name="About Me" index={1} />
       <Section id="projects" name="Projects" index={2} />
       <Section id="skills" name="Skills" index={3} />

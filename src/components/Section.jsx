@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const Section = ({ name, index, id }) => {
+const Section = ({ name, index, id, setActiveSection }) => {
   const sectionRef = useRef(null);
 
   // Update the active section based on scroll position
@@ -9,18 +9,12 @@ const Section = ({ name, index, id }) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Add active class to the sidebar navigation
-            document
-              .querySelector(`[data-section="${id}"]`)
-              .classList.add('active');
-          } else {
-            document
-              .querySelector(`[data-section="${id}"]`)
-              .classList.remove('active');
+            // Update active section state in Sidebar
+            setActiveSection(id);
           }
         });
       },
-      { threshold: 0.6 } // Trigger when 60% of the section is visible
+      { threshold: 0.5 } // Trigger when 60% of the section is visible
     );
 
     if (sectionRef.current) {
@@ -32,14 +26,14 @@ const Section = ({ name, index, id }) => {
         observer.unobserve(sectionRef.current);
       }
     };
-  }, [id]);
+  }, [id, setActiveSection]);
 
   return (
     <section
       ref={sectionRef}
       id={id}
       style={{
-        height: '150vh',
+        height: '110vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
