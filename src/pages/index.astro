@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import Section from '../components/Section.jsx';
 import Sidebar from '../components/Sidebar.jsx';
 ---
 
@@ -14,11 +13,7 @@ import Sidebar from '../components/Sidebar.jsx';
     <Sidebar client:load />
     <!-- Main Content Sections (React Components) -->
     <main>
-      <Section id="hero" name="hero" index={0} />
-      <Section id="about" name="About Me" index={1} />
-      <Section id="projects" name="Projects" index={2} />
-      <Section id="skills" name="Skills" index={3} />
-      <Section id="contact" name="Contact Me" index={4} />
+      <!--Section component is returned here -->
     </main>
   </body>
 </html>
