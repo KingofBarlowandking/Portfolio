@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Sidebar from '../components/Sidebar.jsx';
+import MobileSidebar from '../components/MobileSidebar.jsx';
 ---
 
 <html lang="en">
@@ -10,8 +11,14 @@ import Sidebar from '../components/Sidebar.jsx';
     <title>Interactive Portfolio</title>
   </head>
   <body>
-    <Sidebar client:load />
-    <!-- Main Content Sections (React Components) -->
+    <!-- Include the MobileSidebar component for mobile -->
+    <div class="desktop-sidebar">
+      <Sidebar client:load />
+    </div>
+    <div class="mobile-sidebar">
+      <MobileSidebar client:load />
+    </div>
+    
     <main>
       <!--Section component is returned here -->
     </main>

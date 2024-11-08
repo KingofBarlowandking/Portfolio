@@ -115,3 +115,19 @@ section {
 #projects { background-color: #fafad2; }
 #skills { background-color: #ffe4e1; }
 #contact { background-color: #e0ffff; }
+
+
+
+
+.mobile-sidebar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-sidebar {
+    display: none; /* Hide desktop sidebar */
+  }
+  .mobile-sidebar {
+    display: block; /* Show mobile sidebar */
+  }
+}
