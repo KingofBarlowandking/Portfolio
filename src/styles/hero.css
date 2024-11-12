@@ -1,0 +1,91 @@
+/* Hero Section Styling */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the hero section */
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Photo Container */
+  .photo-container {
+    width: 200px; /* Adjust width */
+    height: 300px; /* Adjust height */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; /* Fallback background color */
+  }
+  
+  .photo-container .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Text Container (right side) */
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 300px;
+  }
+  
+  /* Text Box (Top) */
+  .text-box {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Links Container (Bottom) */
+  .links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .links-container a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .links-container a:hover {
+    background-color: #0077b5; /* LinkedIn color */
+    color: #fff;
+  }
+  
+  .links-container a:nth-child(2):hover {
+    background-color: #e64a7e; /* Dribbble color */
+  }
+  
+  .links-container a:nth-child(3):hover {
+    background-color: #333; /* GitHub color */
+    color: #fff;
+  }
+  
+  

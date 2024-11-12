@@ -1,0 +1,23 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Make the section take up the full height of the viewport */
+    padding: 2rem;
+  }
+  
+  .contact-text-box {
+    background-color: #f0f8ff; /* Background color for the text box */
+    border-radius: 10px; /* Rounded corners for the text box */
+    padding: 2rem;
+    width: 80%; /* Adjust width of the text box */
+    max-width: 800px; /* Limit the maximum width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+  }
+  
+  .contact-text-box p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6; /* Space between lines for readability */
+  }

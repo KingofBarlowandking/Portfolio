@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Sidebar = () => {
+const Sidebar = ({ sections }) => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [activeSection, setActiveSection] = useState('');
 
@@ -22,6 +22,7 @@ const Sidebar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(sectionId); // Set the active section when clicked
     }
   };
 
@@ -38,7 +39,7 @@ const Sidebar = () => {
         <span>&larr;</span>
       </div>
       <ul>
-        {['hero', 'about', 'projects', 'skills', 'contact'].map((section) => (
+      {sections.map((section) => (
           <li
             key={section}
             className={activeSection === section ? 'active' : ''}
