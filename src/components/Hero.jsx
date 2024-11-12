@@ -1,11 +1,13 @@
 import React from 'react';
+import hero from '../images/hero.jpg';
+
 
 const Hero = ({ id }) => {
   return (
     <section id="me" className="about-section">
       <div className="hero-container">
         <div className="photo-container">
-          <img src="your-photo.jpg" alt="photo" className="photo" />
+          <img src={hero} alt="Me" className="photo" />
         </div>
         <div className="text-container">
           <div className="text-box">

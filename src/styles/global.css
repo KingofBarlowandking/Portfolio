@@ -10,6 +10,12 @@ html {
   height: 100%;
 }
 
+p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6; /* Space between lines for readability */
+}  
+
 /* Hide scrollbar for all elements */
 body, .mobile-sidebar {
   overflow-y: scroll; /* Enables scrolling */
@@ -115,7 +121,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
   text-align: center;
   scroll-snap-align: start;
   padding: 0 2rem;

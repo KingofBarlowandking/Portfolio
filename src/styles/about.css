@@ -16,9 +16,5 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
   }
   
-  .about-text-box p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6; /* Space between lines for readability */
-  }
+
   
