@@ -34,11 +34,26 @@
   .mobile-sidebar ul {
     list-style: none;
     padding: 2rem 1rem;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    text-align: center;
+    height: 100%; /* Ensures the sidebar items take up full height */
   }
-  
+
   .mobile-sidebar ul li {
     padding: 1rem 0;
+    margin: 0.5rem 0;
     cursor: pointer;
+    width: 80%; /* Adjust as needed for the look */
+    background-color: #444; /* Darker shade for contrast */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
+  
+  
+  
   
