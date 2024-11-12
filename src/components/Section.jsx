@@ -1,20 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 
-const Section = ({ name, index, id, setActiveSection }) => {
+const Section = ({ id, name, index, setActiveSection }) => {
   const sectionRef = useRef(null);
 
-  // Update the active section based on scroll position
+  // Observer to update the active section based on scroll position
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Update active section state in Sidebar
-            setActiveSection(id);
+            setActiveSection(id); // Trigger the active section update
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 60% of the section is visible
+      { threshold: 0.5 }
     );
 
     if (sectionRef.current) {
@@ -38,17 +37,11 @@ const Section = ({ name, index, id, setActiveSection }) => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: '2rem',
-        backgroundColor: [
-          '#f0f8ff',
-          '#e6e6fa',
-          '#fafad2',
-          '#ffe4e1',
-          '#e0ffff',
-        ][index],
+        backgroundColor: ['#f0f8ff', '#e6e6fa', '#fafad2', '#ffe4e1', '#e0ffff'][index],
         scrollSnapAlign: 'start',
       }}
     >
-      {name}
+      {name || id.charAt(0).toUpperCase() + id.slice(1)}
     </section>
   );
 };

@@ -2,6 +2,10 @@
 import '../styles/global.css';
 import Sidebar from '../components/Sidebar.jsx';
 import MobileSidebar from '../components/MobileSidebar.jsx';
+import Section from '../components/Section.jsx';
+
+// List of sections to pass to Section components
+const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
 ---
 
 <html lang="en">
@@ -11,16 +15,15 @@ import MobileSidebar from '../components/MobileSidebar.jsx';
     <title>Interactive Portfolio</title>
   </head>
   <body>
-    <!-- Include the MobileSidebar component for mobile -->
-    <div class="desktop-sidebar">
-      <Sidebar client:load />
-    </div>
-    <div class="mobile-sidebar">
-      <MobileSidebar client:load />
-    </div>
-    
+    <!-- Sidebar Components -->
+    <Sidebar client:load />
+    <MobileSidebar client:load />
+
+    <!-- Main Content -->
     <main>
-      <!--Section component is returned here -->
+      {sections.map((section, index) => (
+        <Section key={section} id={section} index={index} client:visible />
+      ))}
     </main>
   </body>
 </html>

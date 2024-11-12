@@ -7,12 +7,11 @@ const MobileSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  // Function to handle scrolling to sections
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setIsSidebarOpen(false); // Close sidebar after clicking a section
+      setIsSidebarOpen(false);
     }
   };
 
@@ -25,9 +24,7 @@ const MobileSidebar = () => {
       >
         ☰
       </button>
-      <nav
-        className={`mobile-sidebar ${isSidebarOpen ? 'open' : ''}`}
-      >
+      <nav className={`mobile-sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <ul>
           {['hero', 'about', 'projects', 'skills', 'contact'].map((section) => (
             <li key={section} onClick={() => scrollToSection(section)}>
