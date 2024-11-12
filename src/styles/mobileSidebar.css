@@ -1,33 +1,36 @@
 .hamburger-menu {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 200;
-  }
+  position: fixed;
+  bottom: 30%;
+  right: 2rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #333333;
+  cursor: pointer;
+  z-index: 1501; /* Above the sidebar */
+  transition: left 0.3s ease; /* Smoothly move with the sidebar */
+}
   
-  .mobile-sidebar {
-    position: fixed;
-    top: 0;
-    left: -70%; /* Hide by default */
-    width: 70%;
-    height: 100vh;
-    background-color: #333;
-    color: #fff;
-    overflow-y: auto;
-    transition: left 0.3s ease;
-    z-index: 150;
-  }
+.mobile-sidebar nav {
+  position: fixed;
+  top: 0;
+  right: -70%; /* Initially off-screen */
+  width: 70%;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
   
   .mobile-sidebar.open {
-    left: 0; /* Show sidebar when open */
+    right: 0; /* Show sidebar when open */
   }
-  
+
+  .mobile-sidebar.open .hamburger-menu {
+    left: 70%; /* Aligns with the left edge of the sidebar when open */
+  }
+
   .mobile-sidebar ul {
     list-style: none;
     padding: 2rem 1rem;

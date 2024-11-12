@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/mobileSidebar.css';
 import Sidebar from '../components/Sidebar.jsx';
 import MobileSidebar from '../components/MobileSidebar.jsx';
 import Section from '../components/Section.jsx';
@@ -16,8 +17,13 @@ const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
   </head>
   <body>
     <!-- Sidebar Components -->
-    <Sidebar client:load />
-    <MobileSidebar client:load />
+    
+    <div class="desktop-sidebar">
+      <Sidebar client:load />
+    </div>
+    <div class="mobile-sidebar">
+      <MobileSidebar client:load />
+    </div>
 
     <!-- Main Content -->
     <main>
