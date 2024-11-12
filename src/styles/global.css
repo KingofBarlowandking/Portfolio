@@ -10,6 +10,18 @@ html {
   height: 100%;
 }
 
+/* Hide scrollbar for all elements */
+body, .mobile-sidebar {
+  overflow-y: scroll; /* Enables scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For Webkit-based browsers (Chrome, Safari) */
+body::-webkit-scrollbar, 
+.mobile-sidebar::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
 html, body {
   font-family: Arial, sans-serif;
   overflow-x: hidden; /* Prevents horizontal scroll */
