@@ -4,7 +4,7 @@ import React from 'react';
 
 const Hero = ({ id }) => {
   return (
-    <section id="me" className="about-section">
+    <section id="me" className="hero-section">
       <div className="hero-container">
         <div className="photo-container">
         <img src="/hero.jpg" alt="Me" className="photo" />

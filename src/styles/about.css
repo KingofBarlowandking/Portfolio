@@ -1,13 +1,23 @@
+
 .about-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;  /* Make the section take up the full height of the viewport */
     padding: 2rem;
+    background-color: rgb(24, 40, 37);
   }
-  
+
+  .about-heading {
+    width: 100%; /* Make the heading take the full width of the parent */
+    text-align: center; /* Center the text */
+    margin-bottom: 1rem; /* Add some space below the heading */
+    color: rgb(244, 224, 77); /* Optional: set color to contrast with background */
+  }
+
   .about-text-box {
-    background-color: #f0f8ff; /* Background color for the text box */
+    background-color: #dfdfdf;
     border-radius: 10px; /* Rounded corners for the text box */
     padding: 2rem;
     width: 80%; /* Adjust width of the text box */

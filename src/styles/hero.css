@@ -4,9 +4,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f8ff;
     padding: 2rem;
     box-sizing: border-box;
+  }
+
+.hero-section{
+  background-color: #dfdfdf;
   }
   
   /* Container for the hero section */

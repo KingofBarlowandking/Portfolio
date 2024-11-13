@@ -8,7 +8,7 @@ const Sidebar = ({ sections }) => {
     const handleMouseMove = (event) => {
       const windowWidth = window.innerWidth;
       const mouseX = event.clientX;
-      setIsSidebarVisible(mouseX > (windowWidth * 2) / 3); // Show sidebar when mouse is on the right 1/3 of the screen
+      setIsSidebarVisible(mouseX > (windowWidth * 8) / 10); // Show sidebar when mouse is on the right 1/3 of the screen
     };
 
     document.body.addEventListener('mousemove', handleMouseMove);

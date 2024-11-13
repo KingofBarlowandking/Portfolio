@@ -29,7 +29,7 @@ body::-webkit-scrollbar,
 }
 
 html, body {
-  font-family: Arial, sans-serif;
+  font-family: 'Jost Variable', sans-serif;
   overflow-x: hidden; /* Prevents horizontal scroll */
   scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
   height: 100%; /* Ensures the body takes the full height */
@@ -126,15 +126,6 @@ section {
   padding: 0 2rem;
   transition: background-color 0.5s ease;
 }
-
-#hero { background-color: #f0f8ff; }
-#about { background-color: #e6e6fa; }
-#projects { background-color: #fafad2; }
-#skills { background-color: #ffe4e1; }
-#contact { background-color: #e0ffff; }
-
-
-
 
 .mobile-sidebar {
   display: none;

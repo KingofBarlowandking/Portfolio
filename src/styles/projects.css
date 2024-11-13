@@ -5,11 +5,18 @@
     padding: 2rem;
     height: 100vh;
     position: relative;
+    background-color: rgb(24, 40, 37);
   }
   
+  .projects-heading {
+    width: 100%; /* Make the heading take the full width of the parent */
+    text-align: center; /* Center the text */
+    margin-bottom: 1rem; /* Add some space below the heading */
+    color: rgb(244, 224, 77); /* Optional: set color to contrast with background */
+  }
  
   .projects-text-box {
-    background-color: #f0f8ff;
+    background-color: #dfdfdf;
     border-radius: 10px;
     padding: 2rem;
     width: 80%;
@@ -24,7 +31,7 @@
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     width: 100%;
     max-width: 1200px;
   }
@@ -42,5 +49,20 @@
   
   .project-square:hover {
     transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .project-text {
+    position: absolute; /* Position the text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure the text is perfectly centered */
+    text-align: center; /* Center the text */
+  }
+
+  .project-text p {
+    color: #6b0000; /* Make text color white or change as needed */
+    font-size: 1.5rem; /* Adjust font size */
+    z-index: 1; /* Ensure text appears above the background image */
   }
   
