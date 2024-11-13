@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../images/hero.jpg';
+
 
 
 const Hero = ({ id }) => {
@@ -7,7 +7,7 @@ const Hero = ({ id }) => {
     <section id="me" className="about-section">
       <div className="hero-container">
         <div className="photo-container">
-          <img src={hero} alt="Me" className="photo" />
+        <img src="/hero.jpg" alt="Me" className="photo" />
         </div>
         <div className="text-container">
           <div className="text-box">
