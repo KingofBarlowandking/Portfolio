@@ -38,6 +38,35 @@ The last question is _Any important considerations I have missed?_ which I think
 
 ## Personas and empathy maps
 
-I wanted to create a few personas based on what I knew about other coffee users. Obviously I do not have hard data so I'm taking a few liberties here but by trying to create a few I would be helping myself to hopefully see what I may miss from my own poijnt of view.
+I wanted to create a few personas based on what I knew about other coffee users. Obviously I do not have hard data so I'm taking a few liberties here but by trying to create a few I would be helping myself to hopefully see what I may miss from my own point of view.
 _a small aside, I completely understand that due to not having data I am likely blind to other things that I do not know or points of view I may dismiss_
+
+## insert personas here
+## connoisseur cate 
+wants to track everything so that he can get the absolute best shot possible, tweaks the smallest details. spends alot on equipment and beans. not constrained by cost but that doesn't mean they want to waste the coffee they get. doesn't just consume coffee as drink, will carve out time to invest in trying new beans and techniques. will work around quirks if that technology or equipment is worth it  but also believes that good and expensive things are frictionless and intuitive to use. will rant about issues with a product more if it is extremely good but a few things let it down.
+## casual enthusiast ethan 
+often time poor but sometimes will make time to spend time on the hobby of coffee. most of the coffee they drink is made quickly in the morning before work or going to do something. Knows what good coffee tastes like and wants every shot to be as close as possible to perfect without huge amounts of effort. often buys the same beans and when doing so wants to dial in immediately to a good cup. sometimes gets fancy and different beans and does their best to dial in to the tastiest shot possible. any technology or equipment has to be easy to use as it will probably be used early in the morning without much time.
+## new to the hobby nathan
+still investigating the hobby and getting interested. still building knowledge but seems to be getting better tasting coffee everytime they try something new. due to the newness to coffee can be confused by the equipment or technology and terminology, needs things to be easy to use and intuitive.
+## all the toys alex
+has every different brewer under the sun and picks one based on what they feel like. can guess pretty well what variables are going to look like for a new bean on a brew method due to wide experience. keeps lots of specialty coffee and changes daily based on what taste they want that day. can use almost any technology and will find the cool factor in something even if it isn't the easiest to use. Only really graabs what is really good and without flaws when brewing daily though. any new technology or equipment needs to enhance the experience or it will become a show piece, unused regularly.
+
+## site map
+
+## user flows
+
+## sketch/wireframe
+
+## low fidelity
+
+## iterations
+
+## prototyping and usability
+
+## visual design
+
+## branding
+
+## onboarding 
+
 
