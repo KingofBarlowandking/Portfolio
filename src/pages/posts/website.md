@@ -4,9 +4,6 @@ title: 'This website - the start of my portfolio'
 pubDate: 2024-12-02
 description: 'this website'
 author: 'Alex King'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'Placeholder for high fidelity prototype'
 tags: ["UI/UX", "astro", "static"]
 ---
 
@@ -17,3 +14,11 @@ As part of one of my final subjects at uni, we were tasked with creating a portf
 This site uses the Astro framework features resuable React components for greater ease of editing and expanding down the road. I do not claim to be an expert in these but with some ChatGPT help I have become competent enough in using them for my purpose.
 
 You can view the files for this site on Github.
+
+<img src="/tabletMockup1.png" alt="Mockup for this website" class="markdown-image">
+
+<img src="/tabletMockup2.png" alt="Mockup for this website" class="markdown-image">
+
+<img src="/tabletMockup3.png" alt="Mockup for this website" class="markdown-image">
+
+

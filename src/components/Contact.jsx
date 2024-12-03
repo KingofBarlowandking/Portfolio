@@ -18,35 +18,28 @@ const Contact = ({ id }) => {
 
       {/* Social Icons */}
       <div className="social-links">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-            alt="LinkedIn"
-            className="social-icon"
-          />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
-            alt="Instagram"
-            className="social-icon"
-          />
-        </a>
-        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">
+        {/*<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">*/}
+          {/*<img*}
+            {/*src="https://cdn-icons-png.flaticon.com/512/174/174857.png"*/}
+            {/*alt="LinkedIn"*/}
+           {/*className="social-icon"*/}
+          {/*/>*/}
+        {/*</a>*/}
+        <a href="https://dribbble.com/mralexjamesking" target="_blank" rel="noopener noreferrer">
           <img
             src="https://cdn-icons-png.flaticon.com/512/733/733544.png"
             alt="Dribbble"
             className="social-icon"
           />
         </a>
-        <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:mralexjamesking@gmail.com" target="_blank" rel="noopener noreferrer">
           <img
             src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
             alt="Email"
             className="social-icon"
           />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/KingofBarlowandking/Portfolio" target="_blank" rel="noopener noreferrer">
           <img
             src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
             alt="GitHub"

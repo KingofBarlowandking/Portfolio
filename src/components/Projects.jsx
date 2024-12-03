@@ -5,10 +5,10 @@ const projects = [
   {
     text: "This website",
     link: "/posts/website",
-    image: "/logo1.png",
+    image: "/tabletMockup1.png",
   },
   {
-    text: "Case Study, a coffee tracking app",
+    text: "Case Study: a coffee tracking app",
     link: "/posts/case-study",
     image: "/logo2.png",
   },

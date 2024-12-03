@@ -5,8 +5,6 @@ pubDate: 2024-11-24
 description: 'Designing a coffee recipe tracking app and all the pitfalls along the way '
 author: 'Alex King'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'Placeholder for high fidelity prototype'
 tags: ["UI/UX", "Casestudy", "Espresso"]
 ---
 

@@ -59,7 +59,8 @@
 
   .project-text {
     position: absolute; /* Position the text over the image */
-    padding: 1rem;
+    padding: 1.5rem;
+    padding-left: 5rem;
     top: 30%; /* Center vertically */
 }
 

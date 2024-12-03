@@ -48,6 +48,17 @@ main.blog-content p {
   margin: 1.5rem 0;
 }
 
+.markdown-image {
+  max-width: 100%; /* Scale the image to fit the container */
+  width: 100%; /* Match the container width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally if needed */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+
+
+}
+
 /* Footer */
 footer.blog-footer {
   text-align: center;
