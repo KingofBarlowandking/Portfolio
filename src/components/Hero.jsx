@@ -7,7 +7,7 @@ const Hero = ({ id }) => {
     <section id="me" className="hero-section">
       <div className="hero-container">
         <div className="photo-container">
-        <img src="/hero.jpg" alt="Me" className="photo" />
+        {/* <img src="/hero.jpg" alt="Me" className="photo" /> */}
         </div>
         <div className="text-container">
           <div className="text-box">
