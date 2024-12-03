@@ -11,7 +11,7 @@ tags: ["UI/UX", "astro", "static"]
 
 As part of one of my final subjects at uni, we were tasked with creating a portfolio. A website was highly encouraged but tools such as wordpress were suggested for non web dev students. I chose to challenge myself and build some new skills by coding this from scratch.
 
-This site uses the Astro framework features resuable React components for greater ease of editing and expanding down the road. I do not claim to be an expert in these but with some ChatGPT help I have become competent enough in using them for my purpose.
+This site uses the Astro framework and features resuable React components for greater ease of editing and expanding down the road. I do not claim to be an expert in these but am slowly building my skills and capabilities alongside design work.
 
 You can view the files for this site on Github.
 
