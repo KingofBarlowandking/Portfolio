@@ -41,7 +41,6 @@ The last question is _Any important considerations I have missed?_ which I think
 I wanted to create a few personas based on what I knew about other coffee users. Obviously I do not have hard data so I'm taking a few liberties here but by trying to create a few I would be helping myself to hopefully see what I may miss from my own point of view.
 _a small aside, I completely understand that due to not having data I am likely blind to other things that I do not know or points of view I may dismiss_
 
-## insert personas here
 ## connoisseur cate 
 wants to track everything so that he can get the absolute best shot possible, tweaks the smallest details. spends alot on equipment and beans. not constrained by cost but that doesn't mean they want to waste the coffee they get. doesn't just consume coffee as drink, will carve out time to invest in trying new beans and techniques. will work around quirks if that technology or equipment is worth it  but also believes that good and expensive things are frictionless and intuitive to use. will rant about issues with a product more if it is extremely good but a few things let it down.
 ## casual enthusiast ethan 
