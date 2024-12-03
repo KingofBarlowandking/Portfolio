@@ -10,7 +10,7 @@ tags: ["UI/UX", "Casestudy", "Espresso"]
 
 ## Designing a coffee recipe tracking app and all the pitfalls along the way.
 
-
+<img src="/phoneMockupEspressoApp.png" alt="Mockup for this website" class="markdown-image">
 
 **Challenge**: Coffee nerds are obsessed with the quality and taste of the coffee brewed with various brew methods whether in their own home or where they work and tracking all the varibles is important in helping 'dial in' the perfect brew. As a self confessed coffee nerd I have been searching for a useful and easy to use app that lets me track my recipes. 
 

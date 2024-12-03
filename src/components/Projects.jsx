@@ -10,7 +10,7 @@ const projects = [
   {
     text: "Case Study: a coffee tracking app",
     link: "/posts/case-study",
-    image: "/logo2.png",
+    image: "/phoneMockupEspressoApp.png",
   },
 ];
 
