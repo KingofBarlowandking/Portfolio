@@ -117,7 +117,7 @@ html, body {
 /* Main Content Sections */
 section {
   width: 100vw;
-  height: 110vh;
+  min-height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +125,7 @@ section {
   scroll-snap-align: start;
   padding: 0 2rem;
   transition: background-color 0.5s ease;
+  box-sizing: border-box;
 }
 
 .mobile-sidebar {

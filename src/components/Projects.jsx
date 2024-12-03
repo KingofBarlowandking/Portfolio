@@ -1,43 +1,41 @@
 import React from "react";
 import '../styles/projects.css'; // Make sure to import your CSS file
 
-const projectTexts = [
-  "Placeholder",
-  "Another Placeholder",
-  "Yet another placeholder",
-  "Another placeholder?",
-  "Yeah, another placeholder"
+const projects = [
+  {
+    text: "This website",
+    link: "/posts/website",
+    image: "/logo1.png",
+  },
+  {
+    text: "Case Study, a coffee tracking app",
+    link: "/posts/case-study",
+    image: "/logo2.png",
+  },
 ];
 
 const Projects = ({ id }) => {
   return (
     <section id="projects" className="projects-section">
       <div className="projects-heading">
-      <h1>
-          Projects
-      </h1>
+        <h1>Projects</h1>
       </div>
-      <div className="projects-text-box">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
-        </p>
-      </div>
-
+      
       <div className="projects-grid">
-        {projectTexts.map((text, index) => (
-          <div 
+        {projects.map((project, index) => (
+          <a
             key={index}
+            href={project.link} // Corrected to use the current project
             className="project-square"
-            style={{ backgroundImage: `url(/logo${index + 1}.png)` }}>
-            
+            style={{ backgroundImage: `url(${project.image})` }} // Corrected to use the current project
+          >
             <div className="project-text">
-              <p>{text}</p>
+              <p>{project.text}</p> {/* Corrected to use the current project */}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
-  
   );
 };
 

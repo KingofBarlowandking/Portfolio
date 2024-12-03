@@ -1,0 +1,41 @@
+---
+import type { MarkdownLayoutProps } from 'astro';
+import '../styles/blog.css'; // Import your CSS file
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  author: string;
+  pubDate: string;
+}>;
+
+const { frontmatter } = Astro.props;
+
+// Format the date to a readable format (e.g., July 1, 2022)
+const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{frontmatter.title}</title>
+  </head>
+  <body class="blog-layout">
+    <header class="blog-header">
+      <h1 class="blog-title">{frontmatter.title}</h1>
+      <p class="blog-meta">By {frontmatter.author} on {formattedDate}</p>
+    </header>
+
+    <main class="blog-content">
+      <slot />
+    </main>
+
+    <footer class="blog-footer">
+      <p>© 2024 Alex King. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
