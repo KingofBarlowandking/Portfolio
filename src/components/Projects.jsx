@@ -8,7 +8,7 @@ const projects = [
     image: "/tabletMockup1.png",
   },
   {
-    text: "Case Study: a coffee tracking app",
+    text: "Case Study: a coffee tracking app - Part 1",
     link: "/posts/case-study",
     image: "/phoneMockupEspressoApp.png",
   },
