@@ -5,6 +5,11 @@ const ImageGrid = ({ images }) => {
 
   const closeModal = () => setSelectedImage(null);
 
+  const stopPropagation = (e) => {
+    // Prevent the modal from closing when the image is clicked
+    e.stopPropagation();
+  };
+
   return (
     <div>
       {/* Image Grid */}
@@ -23,7 +28,11 @@ const ImageGrid = ({ images }) => {
       {/* Modal */}
       {selectedImage && (
         <div className="modal" onClick={closeModal}>
-          <img src={selectedImage} alt="Enlarged" />
+          <img
+            src={selectedImage}
+            alt="Enlarged"
+            onClick={stopPropagation} // Prevent close when image is clicked
+          />
         </div>
       )}
     </div>
