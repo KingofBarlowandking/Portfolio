@@ -1,4 +1,4 @@
-## My personal portfolio, verison 1
+## My personal portfolio, version 1
 
 # https://alexkingportfolio.netlify.app/
 
