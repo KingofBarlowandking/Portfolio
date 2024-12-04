@@ -8,9 +8,11 @@ image:
 tags: ["UI/UX", "Casestudy", "Espresso"]
 ---
 
+import ImageGrid from '../../components/ImageGrid';
+
 ## Designing a coffee recipe tracking app and all the pitfalls along the way.
 
-<img src="/phoneMockupEspressoApp.png" alt="Mockup for coffee tracking app" class="markdown-image">
+<img src="/phoneMockupEspressoApp.png" alt="Mockup for coffee tracking app" class="markdown-image"/>
 
 _A first draft_ 
 
@@ -42,22 +44,22 @@ _If an app was made that perfectly fulfilled your personal preference for coffee
 
 The last question is _Any important considerations I have missed?_ which I think would be the most important part of the survey. As some background, I primarily brew espresso, but also have a moka pot and a filter brewer that I use from time to time. My filter brewer is a Hario switch which by itself has too many variations of brewing to count. Perhaps one very important consideration should be that I cannot know what variables people may want to track and therefore should try and stay away from hard coding those variables and let them be user determined. But I'm getting ahead of myself.
 
-## Personas and empathy maps
+## Personas
 
-I wanted to create a few personas based on what I knew about other coffee users. Obviously I do not have hard data so I'm taking a few liberties here but by trying to create a few I would be helping myself to hopefully see what I may miss from my own point of view.
+I wanted to create a few personas based on what I knew about other coffee users. Obviously I do not have hard data so I'm taking a few liberties here but by trying to create a few I would be helping myself to hopefully see what I may miss from my own point of view. I had originally thought of making empathy maps for the personas as well but after doing one found it a little useless as the personas are based entirely off my interpretation and thus don't really add anything that isn't in the persona's. Unfortunately this is yet another reason why hard data is invaluable and why this approach of using my own understanding of coffee users will likely be flawed. But I'm working with what I've got. Consider it a cautionary tale. 
+
 _a small aside, I completely understand that due to not having data I am likely blind to other things that I do not know or points of view I may dismiss._
 
-**Connoisseur cate** 
-Wants to track everything so that he can get the absolute best shot possible, tweaks the smallest details. spends alot on equipment and beans. not constrained by cost but that doesn't mean they want to waste the coffee they get. doesn't just consume coffee as drink, will carve out time to invest in trying new beans and techniques. will work around quirks if that technology or equipment is worth it  but also believes that good and expensive things are frictionless and intuitive to use. will rant about issues with a product more if it is extremely good but a few things let it down.
+<ImageGrid
+  images={[
+    { src: "/personaCate.png", alt: "Cate" },
+    { src: "/personaEthan.png", alt: "Ethan" },
+    { src: "/personaNathan.png", alt: "Nathan" },
+    { src: "/personaAlex.png", alt: "Alex" },
+  ]}
+/>
 
-**Casual enthusiast ethan** 
-Often time poor but sometimes will make time to spend time on the hobby of coffee. most of the coffee they drink is made quickly in the morning before work or going to do something. Knows what good coffee tastes like and wants every shot to be as close as possible to perfect without huge amounts of effort. often buys the same beans and when doing so wants to dial in immediately to a good cup. sometimes gets fancy and different beans and does their best to dial in to the tastiest shot possible. any technology or equipment has to be easy to use as it will probably be used early in the morning without much time.
 
-**New to the hobby nathan**
-Still investigating the hobby and getting interested. still building knowledge but seems to be getting better tasting coffee everytime they try something new. due to the newness to coffee can be confused by the equipment or technology and terminology, needs things to be easy to use and intuitive.
-
-**All the toys alex**
-Has every different brewer under the sun and picks one based on what they feel like. can guess pretty well what variables are going to look like for a new bean on a brew method due to wide experience. keeps lots of specialty coffee and changes daily based on what taste they want that day. can use almost any technology and will find the cool factor in something even if it isn't the easiest to use. Only really graabs what is really good and without flaws when brewing daily though. any new technology or equipment needs to enhance the experience or it will become a show piece, unused regularly.
 
 ## ToDos - Visualised personas and empathy maps, sitemap, userflows, sketch/wireframes, low fidelity protos, iterations, prototyping, visual design, onboarding
 
