@@ -24,7 +24,7 @@ const ImageGrid = ({ images }) => {
           />
         ))}
       </div>
-
+          {/*Modal currently not working, using css as a work around for somewhat desired behaviour, to be fixed*/}
       {/* Modal */}
       {selectedImage && (
         <div className="modal" onClick={closeModal}>
