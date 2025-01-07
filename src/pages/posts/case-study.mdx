@@ -82,10 +82,17 @@ solution is that when the user adds variable they put them in a ordered list wit
 feel good I would like to give the user the ability to use either one or a combination of the 2. This obviously adds scope to the design but may be worth it if it will attract and keep more users.
 
 ## Sketchs
+<ImageGrid
+  images={[
+    { src: "/sketchs1.png", alt: "sketch" },
+    { src: "/sketchs2.png", alt: "sketch" },
+    { src: "/sketchs3.png", alt: "sketch" },
+  ]}
+/>
 
 So my hand drawn prototypes brought me to a few possible outcomes, the block variables version, the mixed simple language and another idea that came to me while drawing, of having a diagram to represent the variables, so for an espresso brew, there would be an exploded view showing 
 the grinder, the top of the machine, the portafilter then finally the cup with coffee with lines pointing to each part of the machine. I iterated on the block variables a few times and came up with something to do a low fidelity design from, the mixed simple language version
-I need to prototype to make sure its crossed off but the exploded view I came to the conclusion that it is missing the point of the app a little and whilst would look cool, especially if it was animated and moved in a natural way, would make the design harder to use and possibly off putting
+I need to prototype to make sure its crossed off but the exploded view I came to the conclusion that it is missing the point of the app a little and whilst would look cool, especially if it was animated, would make the design harder to use and possibly off putting
 for users in typical usecase. 
 
 I read an article a little while ago called 'Stop wireframing (but start low fidelity)' and after my iterations with these designs I think the basis of the arguments made in that article make sense to me. Across my 4 sketchs for the block variables the biggest change was 
@@ -93,11 +100,52 @@ adding In and Out tags to represent what parts of the brews were being talked ab
 designs which may have made me change the idea and I would have spent time designing things that weren't as high quality. **I understand that I am new to the industry and this also might not be the case for every project so I am not making my mind up and am simply keeping an open
 mind to other ways of doing things that may be faster and more effective.**
 
-The mixed simple language version hasn't shown me potential yet and I'm thinking it may fall into the same group as the illustration view where it displays the data in a less user friendly when tired or not focused way than possible. I still want to explore it as
-I think it has merit. I think it will need a lot of fine tuning before I can be sure it is not a design I want to hold on to.
+The mixed simple language version hasn't shown me potential yet and I'm thinking it may fall into the same group as the illustration view where it displays the data in a less user friendly when tired or not focused way than possible. 
 
+So with those sketchs done I went and did some low fidelity prototypes based on them.
 
+I tried 3 sort of versions as shown below of the basic idea of block variables and incorporating the natural language into it (ignore the colour differences across the three I was just trying some functions out). The second prototype with the natural language feels empty
+but also when running through the use of it feels like it misses the point, typing up a coherent reference to the brew at 5am doesn't appeal to me. the third screen was an experiemnt with keeping labels on the variables as it could be confusing to look at a bunch of numbers 
+without much reference but I decided that with the number of variables that are likely to be tracked this would lead to not enought space on the page and the labelling and readability can be solved other ways.
 
+## Low fid 3 across
+<ImageGrid
+  images={[
+    { src: "/lowFidMainPageVariants.png", alt: "low fidelity protos of main page" },
+  ]}
+/>
 
+I decided that this was about as far as I wanted to iterate on this design for the moment, things may change as it gets higher fidelity but for now the layout feels user friendly and ticks the boxes it needs to. Some key things that I have considered about the design are
+* The hierachy of the variables, starting at the top being the least likely to change on a day to day basis through the bottom (the easiest for a thumb to reach) being the most likely to change
+* The varible blocks themselves being the buttons make them easy to hit
+* The variables start with variable name and then transition to having a label above the block to provide clarity. If the app is to open on the last brew this is particularly important as it allows the user to get key info on how to brew immediately
+
+These are the screens showing what a blank brew page and filled brew page would look like
+
+## Low fid 2 across
+<ImageGrid
+  images={[
+    { src: "/lowFidMainPage.png", alt: "low fidelity proto of main page" },
+  ]}
+/>
+
+Next up I prototyped a couple of edit variable pages. Key functions here are adding new variables and the arrow key allowing for the variable to expand and show more information.
+
+## low fid variable 2
+<ImageGrid
+  images={[
+    { src: "/lowFidVariables.png", alt: "low fidelity proto of edit variables" },
+  ]}
+/>
+
+ And lastly a historical view of brews. This idea is probably the 2nd most important behind the core function of inputting the brew as this allows you to see correlations between changes in variables and taste. The coffee community is for the most part using the same 
+ brew methods as it is not an easy thing to experiemtn with different brew times or doses etc especially when considering individual differences in equipment. This historical and graph functions may allow more people to try different ways of brewing.
+
+ # historical 2 across
+ <ImageGrid
+  images={[
+    { src: "/lowFidHistorical.png", alt: "low fidelity proto of historical page" },
+  ]}
+/>
 
 
