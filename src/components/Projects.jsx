@@ -8,7 +8,7 @@ const projects = [
     image: "/tabletMockup1.png",
   },
   {
-    text: "Case Study: a coffee tracking app - Part 1",
+    text: "Case Study: a coffee tracking app",
     link: "/posts/case-study",
     image: "/phoneMockupEspressoApp.png",
     //## ToDos - sitemap, userflows, sketch/wireframes, low fidelity protos, iterations, prototyping, visual design, onboarding
