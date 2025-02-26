@@ -91,6 +91,8 @@ footer.blog-footer p {
 .grid-image:hover {
   transform: scale(2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 90vh; 
+  width: auto;
 }
 /*modal currently not working, using css as a work around for somewhat desired behaviour, to be fixed*/
 .modal {
