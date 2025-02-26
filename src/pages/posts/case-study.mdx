@@ -147,3 +147,45 @@ With those low fidelity prototypes done it is now time to try and gather some fe
 gather some feedback again from facebook groups, hopefully with the visual nature of this that will be a little easier to grab attention and actually get people involved. From that feedback I will iterate on the designs if they need and then move into 
 fine tuning and creating high fidelity versions.
 
+I went back to facebook to ask for feedback for the low fidelity prototypes I had created and had a much better experience this time around. 
+The first post I made I got a response from someone familiar with design and they suggested looking at Typeform and how they handle data input on
+individual pages. This would also allow for a twist on the idea of having a diagram or animation showing what the current page is referring to. Main benefit
+to this approach would be simplifying the experience, particularly when tired or juggling a portafilter, grinds cup and milk jug in a way that requires
+less mental input for finding which variable button is needed to be pressed. Flow of the app might now work like this
+* App still opens on an overview, being able to view the data at a glance is still important.
+* Pressing new brew take you to a screen that has one of 2 things on it, either confirms existing input variables and asks whether they are correct before moving on
+or resets the data and allows you to input the 'In' portion of the the brew before pressing a ready to brew button which moves into time input (for espresso at least)
+* each page would then be a single data input with a single large button at the bottom of the screen to move to the next variable 
+* after all the pages have been stepped through the app would then display the data as the overview.
+
+Something interesting about this is it would also allow for a timer page to be displayed so instead of typing in the time for the brew there could be
+three buttons (for espresso) one for start preinfusion, the next full pressure and finally a stop and this would capture both preinfusion time and brew time
+with 3 taps instead of 8, assuming both numbers are double digits. A simple plus and minus button could also be added in case the button press on screen
+is not directly in line with pressing stop on the machine. 
+
+I will prototype some screens to get an idea of how it should look then I think my focus should be on building into an interactive prototype to really show how the app will function. 
+
+This is the design taking the approach similar to typeform and having each page as a data entry. Starts off as something similar to the original design
+but with the choice to keep inputs or reset them.
+
+<ImageGrid
+  images={[
+    { src: "/Iteration1.png", alt: "low fidelity proto of historical page" },
+  ]}
+/>
+
+We then move into the use case of the user wanting to keep the inputs. We step through each of the data entries by page.
+
+<ImageGrid
+  images={[
+    { src: "/Iteration1img2.png", alt: "low fidelity proto of historical page" },
+  ]}
+/>
+
+And now the use case of a user wanting to reset the parameters before continuing on to brew.
+
+<ImageGrid
+  images={[
+    { src: "/Iteration1img3.png", alt: "low fidelity proto of historical page" },
+  ]}
+/>
