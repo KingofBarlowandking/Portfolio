@@ -1,0 +1,47 @@
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .under-construction h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .case-study-link {
+    color: #0af; /* bright cyan link */
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
+  
+  .case-study-link:hover {
+    color: #08f; /* slightly brighter on hover */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .under-construction h1,
+  .under-construction .case-study-link {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  
+  .under-construction .case-study-link {
+    animation-delay: 0.5s;
+  }

@@ -7,6 +7,7 @@ import '../styles/about.css';
 import '../styles/projects.css';
 import '../styles/skills.css';
 import '../styles/contact.css';
+import '../styles/underConstruction.css';
 import Sidebar from '../components/Sidebar.jsx';
 import MobileSidebar from '../components/MobileSidebar.jsx';
 import Hero from '../components/Hero.jsx';
@@ -28,19 +29,23 @@ const sections = ['me', 'about', 'projects', 'skills', 'contact'];
   <body>
     <!-- Sidebar Components -->
     
-    <div class="desktop-sidebar">
+    <!--<div class="desktop-sidebar">
       <Sidebar client:load sections={sections} />
     </div>
     <div class="mobile-sidebar">
       <MobileSidebar client:load />
-    </div>
+    </div> -->
     <!-- Main Content -->
-    <main>
+    <main class="under-construction">
+      <h1>Under Construction</h1>
+      <a href="/case-study" class="case-study-link">View Case Study</a>
+    </main>
+    <!-- <main> 
       <Hero id="me" client:visible />
       <About id="about" client:load />
       <Projects id="projects" client:load />
       <Skills id="skills" client:load />
       <Contact id="contact" client:load />
-    </main>
+    </main> -->
   </body>
 </html>
