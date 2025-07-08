@@ -1,0 +1,35 @@
+---
+layout: ../../layouts/BlogPostLayout.astro
+title: 'Tweaking the Bunnings website for better useability'
+pubDate: 2025-07-8
+description: 
+author: 'Alex King'
+image:
+tags: ["UI/UX", "Casestudy", "Bunnings"]
+---
+
+import ImageGrid from '../../components/ImageGrid';
+
+As a Bunnings team member and someone who regularly shops there I have always found elements of the website to be frustrating. As a customer, I find the page does not display enough information without scrolling and can feel cramped when trying to do research, and as a team member it feels as though customers can’t find item numbers or the location of items particularly well.
+
+I took on the project of tweaking the website to try and make the experience better for both customers and team whilst keeping in mind a key part of the Bunnings business, living lowest prices. A full redesign of the website would require much more development work, and consequently cost,  as opposed to a tweak of elements already available for the website and seems in line with the way the Business is run. 
+
+### I would like to express that this is self initiated, unsolicited work and I am not speaking on behalf of Bunnings in any capacity. I also understand that there are other business and commercial aspects that these tweaks may impact that I may not be aware of.
+
+I’ll be focusing on the product pages only because I would guess this is where the majority of traffic is and only the desktop version of the website as this is clearly a mobile first design that works well on mobile and any tweaks I make to the elements will likely carry over to the mobile version.
+
+I started off trying to identify what it was I felt when using the site and what caused those feelings (skip to the picture for an overview). The first thing is feeling like the page is cramped, like zooming out would give me a better view of all the things I want to see. At about 80% zoom the page looks a lot better and I can scroll to have the gallery and have the full selected image both on the screen. At normal zoom I have to scroll past the image to select other views in the gallery before scrolling back up to see it which is frustrating. The cramped feeling continues scrolling further as a footer enters the screen and along with the persistent header, takes up just over 20% of the screen space. Once I get further down to the ‘Features’ section I feel a little lost. I can’t see the product and its a decent way to scroll up if I was to read something and want to see it on the photo. So much of the screen is taken up by the purchasing section as well that it makes the actual details of the product feel like an after thought. 
+<img src="/annotatedWebsite.png" alt="Annotated Website" class="markdown-image"/>
+Breaking all this down I can identify some elements that we can change on the screen that should help with the issues we have identified above. (again skip to the picture for an overview, I might ramble a little)
+
+The headers and footer are the main causes of the crampedness with the large purchasing section contributing as well as the unnecessary thickness (I think) of the persistent header. Obvious solutions are to reduce the thickness of the header and get rid of the footer all together.
+<img src="/annotatedDesign.png" alt="Annotated Design" class="markdown-image"/>
+This helps address most of the cramped feeling but other things we can do is move the feature section to directly below the gallery which also allows the ‘You might also like’ section to be expanded and actually give the customer a look at other options. As it is currently the section is only able to show 1.5 products which makes cross shopping harder than it needs to be. 
+
+So far most of the tweaks would likely be achievable from the perspective of business interests; moving the ‘you might also like’ section may need some selling as it could be seen as an easy way to upsell or add basket size in its current position and the second header may have to stay (although I bet the data would say the entries barely get clicks) but as that header is disappearing it wouldn’t be a huge impact if it were to stay. Next though I’m going to tackle the purchasing section and although I debated with myself whether these changes would be able to be made, I am viewing this all from a UX perspective. 
+
+My two biggest complaints when dealing with customers and the website is that item numbers aren’t easy to find and the in store location is not immediately obvious for a customer when on a product page. The item number issue is an easy fix, change the website to say item number instead of I/N (if I had a dollar for every phone call where the customer said ‘I slash N number?’ I wouldn’t need a portfolio). The issue of in store location is solved in two ways, one, move the in-store/in stock module to the top of the elements below ‘how to purchase’ and secondly, change the wording from aisle and bay to aisle and which side. As mentioned these are slightly harder changes to make; moving the in store module to the top pushes ‘onepass’ and click and collect down, both options that the business has invested money in, and the wording change  from bay to a side of the aisle would take some work in the backend of how bays are located within stores. Of course I wouldn’t suggest the changes if I didn’t think they would have a positive impact on the customer experience, and in my opinion enough of an impact to make the change worth it. 
+
+On wrapping this up and reflecting on the website in general it occured to me that the issue of crampedness could have been caused by a lack of user testing or testing across different devices as when I am at work the website doesn’t feel anywhere near as bad as it does on my personal laptop. I would guess that most testing was done on bigger screens than the average home user would have and thus didn’t produce the same feeling.  
+<img src="/tweakedDesign.png" alt="Tweaked Design" class="markdown-image"/>      
+<img src="/designMockup.png" alt="Design Mockup" class="markdown-image"/>
