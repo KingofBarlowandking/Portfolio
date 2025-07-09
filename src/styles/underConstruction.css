@@ -1,3 +1,13 @@
+/* Base styles */
+body {
+  background-color: #0a0a1a;
+  color: white;
+  font-family: 'Jost Variable', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for under construction content */
 .under-construction {
   display: flex;
   flex-direction: column;
@@ -5,11 +15,32 @@
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  color: white;
   padding: 2rem;
   gap: 2rem;
+  background-color: #0a0a1a; /* Optional redundancy */
 }
-  
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.under-construction h1 {
+  font-size: 3rem;
+  margin: 0;
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Row for future layout needs */
 .header-row {
   display: flex;
   flex-direction: row;
@@ -19,57 +50,30 @@
   justify-content: center;
 }
 
-.header-row h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.links {
-  display: flex;
-  gap: 1rem;
-}
-  .under-construction h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
- .case-study-link {
+/* Link buttons */
+.case-study-link {
   color: #ddd;
   background: #333;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
-  
-  .case-study-link:hover {
-    color: #08f; /* slightly brighter on hover */
-  }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .preview-image {
+.case-study-link:hover {
+  color: #08f; /* Hover effect */
+}
+
+/* Image preview styling */
+.preview-image {
   max-width: 90%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
-  .under-construction h1,
-  .under-construction .case-study-link {
-    animation: fadeIn 1s ease-out forwards;
-    opacity: 0;
-  }
-  
-  
-  .under-construction .case-study-link {
-    animation-delay: 0.5s;
-  }
